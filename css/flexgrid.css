@@ -1,0 +1,147 @@
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  color: #444444;
+  background: #ecf0f1;
+  font: 400 1.2em 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  margin: 20px auto;
+}
+
+[class*="col-"] {
+  margin-bottom: 20px;
+  min-height: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+@media all and (min-width: 500px) {
+  .wrapper {
+    padding: 0 20px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: #bdc3c7;   
+}
+
+.row {
+  display: flex;
+}
+
+[class*="col-"] {margin-right: 20px;}
+
+[class*="col-"]:last-child {margin-right: 0;}
+
+.col-1 {flex: 1;}
+.col-2 {flex: 2;}
+.col-3 {flex: 3;}
+.col-4 {flex: 4;}
+.col-5 {flex: 5;}
+.col-6 {flex: 6;}
+.col-7 {flex: 7;}
+.col-8 {flex: 8;}
+.col-9 {flex: 9;}
+.col-10 {flex: 10;}
+.col-11 {flex: 11;}
+.col-12 {flex: 12;}
+
+[class*="col-"] {
+  margin-bottom: 20px;
+  min-height: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.sticky {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  max-height: 150px;
+}
+
+.noBack {
+   background-color: #ecf0f1; /* make sure to change this to the background color */
+}
+
+.blankCol {
+  min-height: 75px;
+  max-height: 75px;
+}
+
+.hiddenCol {
+  visibility: hidden;
+}
+
+.fullWidth {margin-bottom: 0;}
+.fullWidth:last-child {margin-bottom: 20px;}
+
+.noBottomMargin {margin-bottom: 0;}
+
+.spaceOff,
+.spaceOff:last-child {
+  margin-bottom: 0;
+}
+
+ /* Navigation */
+.navigation {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  color: #9c9c9c;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.navigation .navi {
+  color: #ffffff;
+}
+
+.navigation a:hover {
+  color: #ffffff;
+}
+
+.list a {
+  text-align: center;
+  background: #b51f29;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 0;
+  padding: 12px 32px 12px 32px;
+}
+
+.list a:hover {
+  background: #9f1b24;
+  color: #ffffff;
+}
+
+
+
+@media all and (min-width: 1000px) {
+  .wrapper {max-width: 1000px;}
+}
+
+@media all and (min-width: 500px) {
+  .fullWidth {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .spaceOff,
+  .spaceOff:last-child {
+    margin-bottom: 0;
+  }
+}

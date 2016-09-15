@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+		<title>rock-scissor-paper</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/flexgrid.css">
+		<link rel="stylesheet" href="css/design.css">
+	</style>
+</head>
+
+<body>
+	<div class="row bgWhite shadowBig">
+		<div class="col-12 spaceOff">
+			<h1>rock - scissor - paper</h1>
+		</div>
+	</div>
+	<div class="wrapper noBack">
+		<div class="row">
+			<div class="col-12 bgPurple roundedSmall"><img src="image/icon-question-mark-white.png" id="computer" height="74"/></div>
+		</div>
+		<div class="row">
+			<div class="col-4 bgBlue font2 roundedSmall" id="myScore">you: 0</div>
+			<div class="col-4 bgCustom font1 roundedSmall" id="info">choose your weapon!</div>
+			<div class="col-4 bgPurple font2 roundedSmall" id="computerScore">computer: 0</div>
+		</div>
+		<div class="row">
+			<button class="col-4 button isPrimary" id="rock" onclick="game(0);"><img src="image/icon-rock-white.png" height="80"/></button>
+			<button class="col-4 button isPrimary" id="scissor" onclick="game(1);"><img src="image/icon-scissor-white.png" height="74"/></button>
+			<button class="col-4 button isPrimary" id="paper" onclick="game(2);"><img src="image/icon-paper-white.png" height="74"/></button>
+		</div>
+	</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+
+</html>
